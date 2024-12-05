@@ -1,0 +1,125 @@
+/* Basic Styles */
+body {
+  font-family: 'Roboto', sans-serif;
+  background: linear-gradient(135deg, #ff99cc, #66ccff);
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+.container {
+  text-align: center;
+  width: 80%;
+  max-width: 500px;
+}
+
+.title {
+  font-size: 4rem;
+  margin-bottom: 20px;
+  color: white;
+  animation: titleAnimation 1s ease-in-out;
+  text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3); /* Added text-shadow */
+}
+
+@keyframes titleAnimation {
+  0% {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/* Input Section */
+.input-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+input[type="text"], select {
+  padding: 10px;
+  width: 80%;
+  font-size: 16px;
+  border-radius: 6px;
+  border: 2px solid #ccc;
+}
+
+button {
+  padding: 10px 20px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-align: center;
+}
+
+.add-task-button, .add-category-button {
+  background-color: #008CBA;
+  color: white;
+  font-size: 16px;
+}
+
+button:hover {
+  transform: scale(1.1);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 6px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+li .actions {
+  display: flex;
+  justify-content: space-between;
+  width: 100px;
+}
+
+li .actions button {
+  flex: 1;
+  margin-left: 10px;
+  padding: 8px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  text-align: center;
+}
+
+li .actions button.check {
+  background-color: #4CAF50;
+  color: white;
+}
+
+li .actions button.delete {
+  background-color: #f44336;
+  color: white;
+}
+
+li .actions button:first-child {
+  margin-left: 0;
+}
+
+li .actions button:hover {
+  transform: scale(1.1);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
