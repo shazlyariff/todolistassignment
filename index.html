@@ -4,28 +4,44 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>To-Do List with Categories</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <div class="container">
-    <h1>To-Do List</h1>
-    <form id="todo-form">
-      <input type="text" id="todo-input" placeholder="Enter a task..." required />
-      <select id="task-category" required>
-        <option value="">Select a category</option>
-        <option value="Work">Work</option>
-        <option value="Personal">Personal</option>
-        <option value="Study">Study</option>
-        <option value="Others">Others</option>
+    <h1 class="title">To-Do Liste</h1>
+    <div class="input-section">
+      <input type="text" id="taskInput" placeholder="Enter a task" />
+      <select id="categorySelect">
+        <option value="">Pick a Category</option>
       </select>
-      <button type="submit">Add Task</button>
-    </form>
-
-    <section id="active-tasks">
-      <h2>Active Tasks</h2>
-      <ul id="todo-list"></ul>
-    </section>
+      <input type="text" id="newCategoryInput" placeholder="Add a new category" />
+      <button class="add-category-button" id="addCategoryButton">Add Category</button>
+      <button class="add-task-button" id="addTaskButton">Add Task</button>
+    </div>
+    <ul id="taskList"></ul>
   </div>
+
+  <header>
+    <h1 class=".text-secondary-emphasis">Announcement</h1>
+</header>
+<div class="container-fluid">
+    <div class="row align-items-center">
+        <div class="col-2 col-md-3"></div>
+        <div id="app" class="col-8 col-md-6">
+            <td><button id="get-weather-btn" type="button">Weather Forecast</button></td>
+        </div>
+        <div class="col-2 col-md-3"></div>
+    </div>
+</div>
+<div class="container-fluid">
+    <div class="row align-items-center">
+        <div class="col-2 col-md-3"></div>
+        <div id="announcement" class="col-8 col-md-6">
+        </div>
+        <div class="col-2 col-md-3"></div>
+    </div>
+</div>
 
   <script src="script.js"></script>
 </body>

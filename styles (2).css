@@ -1,0 +1,71 @@
+body {
+
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background-color: #75dbcaa6;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+
+div {
+    display: flex;
+    justify-content: center;
+    align-items:normal
+}
+
+h1 {
+    text-align: center;
+}
+
+td {
+    display: flex;
+    width: 50px;
+}
+
+#app {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+    width: 500px;
+    margin: 0 auto;
+    background-color: #489e845b;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+#announcement {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size:smaller; /* Set the font size for weather information */
+    height: 150px;
+    width: 500px;
+    margin: 0 auto;
+    background-color: #d4d2375b;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+#get-weather-btn {
+    padding: 10px 15px;
+    background-color: #126358;
+    color: white;
+    border: none;
+    margin-bottom: 20px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 4px;
+}
+
+#get-weather-btn:hover {
+    background-color: #357266;
+}
+
